@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>merchant checkout page</title>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+  <script>
+    var temp = window.location.href;
+    var res = temp.split('/');
+    var y= res[res.length-2];
+
+    var socket = new WebSocket('ws://' + window.location.host + "/"+ "payment-" + y + "/");
+    socket.onopen = function open() {
+      console.log('WebSockets connection created.');
+    };
+    socket.onmessage = function message(event) {
+        console.log('inside the method');
+        var data = JSON.parse(event.data);
+        console.log('after json parsing.');
+        //document.getElementById("users"). = data;
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode(data.msg);
+        node.appendChild(textnode);
+        document.getElementById("users").appendChild(node);
+      };
+    if (socket.readyState === WebSocket.OPEN) {
+        socket.onopen();
+    }
+  </script>
+</html>

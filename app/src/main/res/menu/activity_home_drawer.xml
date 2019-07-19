@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Customise name" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="Customise website name" />
+        <item
+            android:id="@+id/nav_manage"
+            android:title="Customise logo" />
+        <item
+            android:id="@+id/lang"
+            android:title="Customise Language" />
+
+
+        <item
+            android:id="@+id/plan"
+            android:title="Change plan" />
+        <item
+            android:id="@+id/refer"
+            android:title="Refer to friends" />
+        <item
+            android:id="@+id/issues"
+            android:title="Report Issues" />
+        <item
+            android:id="@+id/help"
+            android:title="Help and FAQ" />
+        <item
+            android:id="@+id/aboutus"
+            android:title="About us" />
+        <item
+            android:id="@+id/terms"
+            android:title="Terms and Conditions  " />
+
+        <item
+            android:id="@+id/logout"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

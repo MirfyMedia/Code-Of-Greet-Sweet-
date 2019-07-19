@@ -1,0 +1,22 @@
+StartPage- LoginActivity- OtpVerification- SelectLanguge- WriteWebsiteNameActivity- WriteYourName- HomeActivity-HomeFragment1
+
+ homefragments further open different frag.:   catergory(SEEALL)   ->CategoryFragment -> GridFragment
+						image click greeting  ->EditImageActivity
+
+
+
+DRAWER ITEMS:   home -> HomeActivity
+		customise name ->WriteYourName
+		customise website ->WriteWebsiteNameActivity
+		customise logo ->AddLogoActivity
+		customise language -> SelectLanguge
+
+
+
+
+IMAGE EDITOR BOTTOM ITEMS:
+
+website ->WebsiteEditorDialogFragment
+name ->NameEditorDialogFragment
+text ->TextEditorDialogFragment
+logo ->GetLogoActivity

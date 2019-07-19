@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="purplemain">#800080</color>
+    <color name="grey">#eeeeee</color>
+
+    <color name="custdes">#db154a</color>
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="blue_color_picker">#0066FF</color>
+    <color name="brown_color_picker">#AF593E</color>
+    <color name="green_color_picker">#01A368</color>
+    <color name="orange_color_picker">#FF861F</color>
+    <color name="red_color_picker">#ED0A3F</color>
+    <color name="red_orange_color_picker">#FF3F34</color>
+    <color name="sky_blue_color_picker">#76D7EA</color>
+    <color name="violet_color_picker">#8359A3</color>
+    <color name="yellow_color_picker">#FBE870</color>
+    <color name="yellow_green_color_picker">#C5E17A</color>
+    <color name="tool_bg">#151414</color>
+
+
+    <color name="bgBottomNavigation">#fe485a</color>
+
+    <!--new colors-->
+    <color name="orange">#ff8000</color>
+    <color name="mustard">#ffbf00</color>
+    <color name="yellow">#ffff00</color>
+    <color name="green1">#bfff00</color>
+    <color name="green2">#80ff00</color>
+    <color name="green3">#40ff00</color>
+    <color name="green4">#00ff00</color>
+    <color name="green5">#00ff40</color>
+    <color name="green6">#00ff80</color>
+    <color name="seagreen">#00ffbf</color>
+    <color name="bluish">#00ffff</color>
+    <color name="blue1">#00bfff</color>
+    <color name="blue2">#0080ff</color>
+    <color name="blue3">#0040ff</color>
+    <color name="blue4">#0000ff</color>
+    <color name="blue5">#4000ff</color>
+    <color name="blue6">#8000ff</color>
+    <color name="purple">#bf00ff</color>
+    <color name="pink1">#ff00ff</color>
+    <color name="pink2">#ff00bf</color>
+    <color name="pink3">#ff0080</color>
+    <color name="lightred">#ff0040</color>
+    <color name="red">#ff0000</color>
+
+
+
+
+
+
+    <color name="btnbackground">#FB3D04</color>
+    <color name="colorbackdash">#FAFAFA</color>
+    <color name="toolcolorp">#D4D4D4</color>
+    <color name="textcolorhome">#6E6D6D</color>
+    <color name="viewcolor">#6E6D6D</color>
+    <color name="busfeedbackcolor">#0F0A32</color>
+    <color name="backgroundprofile">#0F0A32</color>
+    <color name="colorprofile">#161616</color>
+    <color name="profilesettingedit">#6A6A6A</color>
+    <color name="colorsubtextprofile">#7A797B</color>
+    <color name="viewcolorchangedetails">#87B7FF</color>
+    <color name="colorbaseplan">#DC143C</color>
+    <color name="colorsmartplan">#0086a2</color>
+    <color name="colorenterpriseplan">#4b6cc4</color>
+
+
+</resources>

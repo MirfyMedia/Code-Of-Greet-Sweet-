@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.greetsweet.plant"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 26
+        versionName '1.25'
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        compileOptions {
+            encoding "UTF-8"
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.github.duanhong169:colorpicker:1.1.6'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.13.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation files('libs/core-3.2.1.jar')
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //====add ons======//
+    implementation 'com.google.android.gms:play-services-auth:11.2.2'
+    implementation 'com.facebook.android:facebook-android-sdk:4.18.0'
+    implementation 'org.jsoup:jsoup:1.10.2'
+    implementation 'io.crossbar.autobahn:autobahn-android:18.5.1'
+    compile 'com.neovisionaries:nv-websocket-client:2.4'
+    implementation 'com.github.markshawn:auto-switcher:1.2'
+    implementation "org.java-websocket:Java-WebSocket:1.3.0"
+    implementation 'com.google.android.gms:play-services-ads:11.2.2'
+    implementation 'com.google.firebase:firebase-auth:11.2.2'
+    implementation 'com.google.firebase:firebase-core:11.2.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.6.0'
+
+}
+apply plugin: 'com.google.gms.google-services'

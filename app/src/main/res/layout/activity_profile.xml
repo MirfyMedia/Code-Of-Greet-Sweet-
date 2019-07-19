@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context="com.virtuoso.tractor.ProfileSetting.Profile">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/purplemain"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/mainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purplemain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/default_avata" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/dimen_6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="@dimen/dimen_16dp"
+                android:text="@string/changephoto"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        </android.support.constraint.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView204"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/account"
+            android:textColor="@color/colorprofile"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/dimen_12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainlayout" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/dimen_25dp"
+            android:layout_marginRight="@dimen/dimen_25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView204"
+            app:layout_constraintTop_toBottomOf="@+id/textView204">
+
+            <TextView
+                android:id="@+id/textView205"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="@string/username1"
+                android:textColor="@color/colorprofile"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Virat Kohli"
+                android:textColor="@color/colorsubtextprofile"
+                android:textSize="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="@+id/textView205"
+                app:layout_constraintTop_toBottomOf="@+id/textView205" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/constraintLanguage"
+            android:layout_marginEnd="@dimen/dimen_25dp"
+            android:layout_marginRight="@dimen/dimen_25dp"
+            app:layout_constraintStart_toStartOf="@+id/constraintUser"
+            app:layout_constraintTop_toBottomOf="@+id/constraintUser">
+
+            <TextView
+                android:id="@+id/languageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mobileno1"
+                android:textColor="@color/colorprofile"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="English"
+                android:textColor="@color/colorsubtextprofile"
+                android:textSize="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="@+id/languageText"
+                app:layout_constraintTop_toBottomOf="@+id/languageText" />
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLanguage">
+
+            <TextView
+                android:id="@+id/BirthTime"
+                android:layout_width="96dp"
+                android:layout_height="15dp"
+                android:text="Membership Plan"
+                android:textColor="@color/colorprofile"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/plan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Female"
+                android:textColor="@color/colorsubtextprofile"
+                android:textSize="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="@+id/BirthTime"
+                app:layout_constraintTop_toBottomOf="@+id/BirthTime" />
+        </android.support.constraint.ConstraintLayout>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintPaytm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/privacccy"
+            app:layout_constraintTop_toBottomOf="@+id/privacccy">
+
+            <TextView
+                android:id="@+id/textView208"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textColor="@color/colorprofile"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/payTmAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="surya@gmail.com"
+                android:textColor="@color/colorsubtextprofile"
+                android:textSize="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="@+id/textView208"
+                app:layout_constraintTop_toBottomOf="@+id/textView208" />
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="#E8E8E8"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintgender"></View>
+        <TextView
+            android:id="@+id/privacccy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/privacyandsetting"
+            android:textColor="@color/colorprofile"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:textAllCaps="true"
+            android:textSize="@dimen/dimen_12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintStart_toStartOf="@+id/privacccy"
+            app:layout_constraintTop_toBottomOf="@+id/constraintPaytm">
+
+            <TextView
+                android:id="@+id/mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:text="@string/mobileno1"
+                android:textColor="@color/colorprofile"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="+91 8607832356"
+                android:textColor="@color/colorsubtextprofile"
+                android:textSize="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="@+id/mobile"
+                app:layout_constraintTop_toBottomOf="@+id/mobile" />
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_25dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:visibility="invisible"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintMobile">
+
+            <TextView
+                android:id="@+id/Locationtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthtext"
+                android:textColor="@color/colorprofile"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textLocationtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Mohali, India"
+                android:textColor="@color/colorsubtextprofile"
+                android:textSize="@dimen/dimen_12dp"
+                app:layout_constraintStart_toStartOf="@+id/Locationtext"
+                app:layout_constraintTop_toBottomOf="@+id/Locationtext" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

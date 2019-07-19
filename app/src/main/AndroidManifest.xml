@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.greetsweet.plant">
+
+    <uses-sdk tools:overrideLibrary="com.google.firebase.auth,io.crossbar.autobahn" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WIFI" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".PhotoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:overrideLibrary="com.google.firebase.auth">
+        <activity android:name=".greetapp.Fragments.More.LoadHtmlActivity"></activity>
+        <activity
+            android:name=".greetapp.Splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".greetapp.HomeActivity"
+            android:launchMode="singleInstance" />
+        <activity android:name=".EditImageActivity" />
+        <activity android:name=".greetapp.Login.OtpVerification" />
+        <activity android:name=".greetapp.MesaageSent.SentMessage" />
+        <activity android:name=".greetapp.WriteName.WriteYourName" />
+        <activity android:name=".greetapp.Login.SelectLanguge" />
+        <activity android:name=".greetapp.Login.LoginActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".greetapp.WriteName.WriteWebsiteNameActivity" />
+        <activity android:name=".greetapp.WriteName.NewLanguageActivity" />
+        <activity android:name=".greetapp.EditorFrags.AddLogoActivity" />
+        <activity android:name=".greetapp.EditorFrags.GetLogoActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/googlemap_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity android:name=".greetapp.Profile.ProfileActivity" />
+        <activity android:name=".greetapp.SearchPack.SearchActivity" />
+        <activity android:name=".greetapp.UserGreets.UserGreetingsActivity" />
+        <activity android:name=".greetapp.EditorFrags.ShowImageActivity" />
+        <activity android:name=".greetapp.SUBGREETfrag.MainGridActivity" />
+        <activity android:name=".greetapp.StartPage" />
+    </application>
+
+</manifest>

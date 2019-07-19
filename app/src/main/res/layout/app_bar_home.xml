@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/DrawerIconStyle">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ffff"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            >
+
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/logo"/>
+
+
+            <SearchView
+                android:id="@+id/page_title"
+                android:layout_width="226dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                app:theme="@style/AppSearchView"
+                android:background="#ffff"
+                android:minWidth="226dp"
+                android:paddingRight="@dimen/dimen_8dp"
+                android:textAllCaps="true"
+                android:windowSoftInputMode="adjustNothing|stateHidden"
+                android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
+                android:textColor="#9A9A9A"
+                android:textSize="@dimen/dimen_12dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/dimen_17dp" />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/searchact"
+                android:layout_marginLeft="70dp"
+                android:background="@drawable/search"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+
+</android.support.design.widget.CoordinatorLayout>

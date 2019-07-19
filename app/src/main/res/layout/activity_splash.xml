@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.greetsweet.plant.greetapp.Splash.SplashActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/rl"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#ffffffff" >
+
+
+        <com.switcher.AutoSwitchView
+            android:id="@+id/start_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            app:switcher_repeatCount="-1"
+            app:switcher_autoStart="true"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/textView73"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="27dp"
+            android:layout_marginEnd="30dp"
+
+            android:layout_marginRight="30dp"
+            android:padding="@dimen/dimen_16dp"
+            android:src="@drawable/skipbutton_skipbutton"
+            android:textAlignment="center"
+            android:textColor="@color/purplemain"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

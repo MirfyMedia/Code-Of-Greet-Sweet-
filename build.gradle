@@ -1,0 +1,44 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+
+    }
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:3.4.1'
+
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath "com.github.dcendents:android-maven-gradle-plugin:2.0"
+        classpath 'me.tatarka:gradle-retrolambda:3.2.3'
+      //  classpath 'me.tatarka.retrolambda.projectlombok:lombok.ast:0.2.3.a2' //fix lint issue
+        classpath 'com.google.gms:google-services:4.2.0'
+       // classpath 'com.google.gms:google-services:4.0.1-beta3'
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+
+
+
+        maven {
+            url "https://maven.google.com"
+        }
+        maven {
+            url "https://maven.fabric.io/public"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
